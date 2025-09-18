@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Circles for PIN -->
+    <LinearLayout
+        android:id="@+id/pinCircles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <!-- 4 Circles -->
+        <View
+            android:id="@+id/circle1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/pin_circle_unfilled" />
+
+        <View
+            android:id="@+id/circle2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/pin_circle_unfilled" />
+
+        <View
+            android:id="@+id/circle3"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/pin_circle_unfilled" />
+
+        <View
+            android:id="@+id/circle4"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/pin_circle_unfilled" />
+    </LinearLayout>
+
+    <!-- Keypad -->
+    <GridLayout
+        android:id="@+id/keypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:gravity="center">
+
+        <!-- Buttons 1 to 9 -->
+        <Button android:id="@+id/btn1"
+            android:text="1"
+            style="@style/KeypadButton"/>
+        <Button android:id="@+id/btn2"
+            android:text="2"
+            style="@style/KeypadButton"/>
+        <Button android:id="@+id/btn3"
+            android:text="3"
+            style="@style/KeypadButton"/>
+        <Button android:id="@+id/btn4"
+            android:text="4"
+            style="@style/KeypadButton"/>
+        <Button android:id="@+id/btn5"
+            android:text="5"
+            style="@style/KeypadButton"/>
+        <Button android:id="@+id/btn6"
+            android:text="6"
+            style="@style/KeypadButton"/>
+        <Button android:id="@+id/btn7"
+            android:text="7"
+            style="@style/KeypadButton"/>
+        <Button android:id="@+id/btn8"
+            android:text="8"
+            style="@style/KeypadButton"/>
+        <Button android:id="@+id/btn9"
+            android:text="9"
+            style="@style/KeypadButton"/>
+
+        <!-- Empty space -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <!-- Button 0 -->
+        <Button android:id="@+id/btn0"
+            android:text="0"
+            style="@style/KeypadButton"/>
+
+        <!-- Delete button -->
+        <Button android:id="@+id/btnDelete"
+            android:text="x"
+            style="@style/KeypadButton"/>
+    </GridLayout>
+
+</LinearLayout>

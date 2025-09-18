@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Secure Gallery</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="verification_code_hint">Enter your verification code</string>
+    <string name="send_code">Send Code</string>
+    <string name="verify_code">Verify Code</string>
+</resources>
